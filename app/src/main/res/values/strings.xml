@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">RatingApp</string>
     <string name="add_course">Add Course</string>
+
+    <string name="RatingRange">Enter between 1-100</string>
+    <string name="Overall_rating">Overall Rating</string>
+    <string name="Subject_rating">Subject Relavans Rating</string>
+    <string name="Preparation_rating">Teacher Preparation Rating</string>
+    <string name="Feedback_rating">Feedback Rating</string>
+    <string name="Examples_rating">Examples Rating</string>
+    <string name="Job_rating">Job Opportunities Rating</string>
+    <string name="Understandability_rating">Understandability Rating</string>
+    <string name="Submit_rating">Submit Rating</string>
+    <string name="Confirm_send_mail">Do you want to send the results to the teahcer?</string>
+    <string name="Name_input">Enter name of course</string>
+    <string name="Email_input">Enter email of course teacher</string>
+
 </resources>

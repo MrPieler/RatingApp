@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/feedbackText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Feedback_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/preparationEdit" />
+
+        <TextView
+            android:id="@+id/examplesText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Examples_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackEdit" />
+
+        <TextView
+            android:id="@+id/jobText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Job_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/examplesEdit" />
+
+        <EditText
+            android:id="@+id/feedbackEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/feedbackText"
+            app:layout_constraintStart_toStartOf="@+id/feedbackText"
+            app:layout_constraintTop_toBottomOf="@+id/feedbackText" />
+
+        <EditText
+            android:id="@+id/examplesEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/feedbackText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/feedbackText"
+            app:layout_constraintTop_toBottomOf="@+id/examplesText" />
+
+        <EditText
+            android:id="@+id/jobEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/feedbackText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/feedbackText"
+            app:layout_constraintTop_toBottomOf="@+id/jobText" />
+
+        <TextView
+            android:id="@+id/preparationText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Preparation_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/SubjectEdit" />
+
+        <EditText
+            android:id="@+id/preparationEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/preparationText"
+            app:layout_constraintStart_toStartOf="@+id/preparationText"
+            app:layout_constraintTop_toBottomOf="@+id/preparationText" />
+
+        <TextView
+            android:id="@+id/SubjectText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Subject_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/overallEdit" />
+
+        <EditText
+            android:id="@+id/SubjectEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/SubjectText"
+            app:layout_constraintStart_toStartOf="@+id/SubjectText"
+            app:layout_constraintTop_toBottomOf="@+id/SubjectText" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/overallText"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/Overall_rating"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+        <EditText
+            android:id="@+id/overallEdit"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/RatingRange"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/overallText"
+            app:layout_constraintStart_toStartOf="@+id/overallText"
+            app:layout_constraintTop_toBottomOf="@+id/overallText" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="rateCourse"
+            android:text="@string/Submit_rating"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobEdit" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
